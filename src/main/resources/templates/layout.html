@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="https://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+<header th:replace="~{fragments :: header}"></header>
+<div layout:fragment="content" class="content"></div>
+<footer th:replace="~{fragments :: footer}"></footer>
+</body>
+
+</html>

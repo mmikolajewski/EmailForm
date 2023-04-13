@@ -1,0 +1,15 @@
+spring:
+  mail:
+    host: smtp.wp.pl
+    port: 465
+    username:
+    password:
+    properties:
+      mail.smtp.ssl.enable: true
+      smtp:
+        auth: true
+
+
+logging:
+  level:
+    pl.javastart.emailform: DEBUG
