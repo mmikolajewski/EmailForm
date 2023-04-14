@@ -1,13 +1,16 @@
 spring:
   mail:
-    host: smtp.wp.pl
-    port: 465
-    username:
-    password:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: b03183ed693196
+    password: 21082cc05e6db4
     properties:
-      mail.smtp.ssl.enable: true
-      smtp:
-        auth: true
+      mail:
+        smtp:
+          auth: true
+
+app:
+  owneremail: szopping@byom.de
 
 
 logging:
