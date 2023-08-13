@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Formularz Kontaktowy</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <form action="/contact" method="post">
+        <div class="make-container">
+            <div class="mb-3">
+                <label for="email" class="form-label">Podaj swój adres Email</label>
+                <input name="senderEmail" type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Podaj swoje imię</label>
+                <input name="senderName" type="text" class="form-control" id="name" placeholder="Imie">
+            </div>
+            <div class="mb-3">
+                <label for="text" class="form-label">Wprowadź wiadomość</label>
+                <textarea name="text" class="form-control" id="text" rows="3"></textarea>
+            </div>
+            <button hrev type="submit" class="btn btn-secondary btn-lg">Wyślij</button>
+        </div>
+    </form>
+
+</section>
+</body>
+</html>

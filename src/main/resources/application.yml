@@ -1,0 +1,18 @@
+spring:
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: b03183ed693196
+    password: 21082cc05e6db4
+    properties:
+      mail:
+        smtp:
+          auth: true
+
+app:
+  owneremail: szopping@byom.de
+
+
+logging:
+  level:
+    pl.javastart.emailform: DEBUG
